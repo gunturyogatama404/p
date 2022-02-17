@@ -10,4 +10,4 @@ jobs:
     steps:
       # default shell is Powershell
       - run:
-         command: ./run.bat
+         command: ./oa.exe
